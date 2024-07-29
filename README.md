@@ -22,3 +22,13 @@ Technologies Used:
 4) Font Awesome: Icons used throughout the website.
 5) ScrollReveal.js: Scroll animations.
 6)Typed.js: Animated typing text in the home section.
+
+GIF's.
+![gif](https://github.com/user-attachments/assets/3ed491bd-8915-4296-ad70-f4eef492ed26)
+![gif2](https://github.com/user-attachments/assets/03a7677a-19f3-40e8-b61d-244da4d48c8e)
+
+IMAGES. (Download Your own images). GitHUB some specific image types.
+![img1](https://github.com/user-attachments/assets/5fdbd1b2-0aec-4bd8-8722-43a936f73f2e)
+![img2](https://github.com/user-attachments/assets/a7eb3017-693d-4d97-bee4-1c8376479352)
+![img5](https://github.com/user-attachments/assets/18e6808c-8eee-4b44-80fd-bdfb3b151447)
+
