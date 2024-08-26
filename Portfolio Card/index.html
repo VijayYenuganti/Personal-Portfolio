@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Card</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/eec090495f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <div class="profile-image">
+          <img src="Profile-img.jpg" alt="Profile Image" />
+        </div>
+        <div class="card-content">
+          <h1>
+            Hi, I'm
+            <abbr title="Yenuganti Naga Venkata Vijay Kumar"
+              >Y.N.V.Vijay Kumar</abbr
+            >
+          </h1>
+          <div class="description">
+            <p>
+              I specialize in MERN stack development, creating robust, scalable
+              web applications using MongoDB, Express.js, React, and Node.js.
+              With a focus on clean code and efficient solutions, I have built
+              numerous projects that showcase my skills and expertise in full
+              stack development.
+            </p>
+          </div>
+          <h1 style="margin: 1.5rem 0 1.8rem 0">Projects</h1>
+          <div class="projects">
+            <div class="project">
+              <p class="number">20+</p>
+              <p class="tech">HTML, CSS</p>
+            </div>
+            <div class="project">
+              <p class="number">15+</p>
+              <p class="tech">HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project">
+              <p class="number">10+</p>
+              <p class="tech">Python</p>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a
+              href="https://github.com/yourprofile"
+              target="_blank"
+              class="icon github"
+              title="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/yourprofile/"
+              target="_blank"
+              class="icon linkedin"
+              title="LinkedIn"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="mailto:your-email@example.com"
+              class="icon gmail"
+              title="Gmail"
+              ><i class="fab fa-google"></i
+            ></a>
+            <a
+              href="https://wa.me/your-number"
+              target="_blank"
+              class="icon whatsapp"
+              title="WhatsApp"
+              ><i class="fa-brands fa-whatsapp fa-lg"></i
+            ></a>
+          </div>
+          <div class="buttons">
+            <button id="hireMeBtn">Hire Me</button>
+            <button id="contactMeBtn">Contact Me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hire Me Form -->
+    <div id="hireMeForm" class="form-popup">
+      <div class="form-container">
+        <span class="close-btn" id="closeHireMe">&times;</span>
+        <form
+          class="HireMe-Form"
+          onsubmit="HireMeEmail(); reset(); return false"
+        >
+          <div class="input-group">
+            <input
+              type="text"
+              class="item"
+              id="name"
+              name="name"
+              required
+              autocomplete="off"
+            />
+            <label for="name">Enter Name</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="email"
+              class="item"
+              id="email"
+              name="email"
+              required
+              autocomplete="off"
+            />
+            <label for="email">Enter Email</label>
+            <div class="error-txt">Enter Email Can't be blank</div>
+          </div>
+          <div class="input-group hireMe-textarea">
+            <textarea id="message" class="item" name="message"></textarea>
+            <label for="message">Message:</label>
+          </div>
+          <button type="submit">
+            Send <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Contact Me Form -->
+    <div id="contactMeForm" class="form-popup">
+      <div class="form-container">
+        <span class="close-btn" id="closeContactMe">&times;</span>
+        <form
+          class="ContactMe-Form"
+          onsubmit="ContactMeEmail(); reset(); return false"
+        >
+          <div class="input-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              autocomplete="off"
+            />
+            <label for="name">Enter Name</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              class="item"
+              name="email"
+              required
+              autocomplete="off"
+            />
+            <label for="email">Enter Email</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="item"
+              required
+              autocomplete="off"
+            />
+            <label for="email">Subject</label>
+          </div>
+          <div class="input-group">
+            <textarea
+              id="message"
+              name="message"
+              class="item"
+              required
+            ></textarea>
+            <label for="message">Message:</label>
+          </div>
+          <button type="submit">
+            Send <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!------------------- Script Files ----------------->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!---- Java Script File Link ---->
+    <script src="scripts.js"></script>
+  </body>
+</html>
 
