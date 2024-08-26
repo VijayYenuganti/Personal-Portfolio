@@ -1,0 +1,7 @@
+I have not connected to gmail account to recieve messages for the portfolio,
+
+i have written code such way that anyone can use the code to recive the message,
+
+to your gmail. but first you have to setup smptjs:- https://smtpjs.com/
+
+add this on your html code i have given in.
